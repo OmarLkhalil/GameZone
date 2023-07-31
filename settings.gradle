@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.pkg.jetbrains.space/kotlin/p/kotlin/kotlin-1.8.20-1.0.10" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url "https://maven.java.net/content/groups/public/"
+        }
+        maven { url "https://maven.google.com" }
+    }
+}
+rootProject.name = "GameZone"
+include ':app'
+include ':feature:home'
+include ':feature:search'
+include ':feature:favorite'
+include ':data'
+include ':common'
+include ':domain'
