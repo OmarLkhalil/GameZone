@@ -33,9 +33,8 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import coil.compose.SubcomposeAsyncImage
 import com.mobilebreakero.common.components.CoilImage
 import com.mobilebreakero.common.components.LoadingIndicator
-import com.mobilebreakero.common.navigationanim.NavOptions
 import com.mobilebreakero.home.R
-import com.mobilebreakero.home.ui.viewmodell.HomeViewModel
+import com.mobilebreakero.common.viewmodell.MainViewModel
 
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -122,7 +121,7 @@ fun TopPager() {
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun MiddlePager(viewModel: HomeViewModel = hiltViewModel(), navController: NavController) {
+fun MiddlePager(viewModel: MainViewModel = hiltViewModel(), navController: NavController) {
 
     val games = viewModel.games.value.games!!.flow.collectAsLazyPagingItems()
     val pagerState = rememberPagerState(
@@ -171,7 +170,7 @@ fun MiddlePager(viewModel: HomeViewModel = hiltViewModel(), navController: NavCo
             contentScale = ContentScale.FillBounds,
             gameTitle = game.name,
             onClick = {
-                navController.navigate("Details?name=$name&description=$description&image=$image&rating=$rating&link=$link", navOptions = NavOptions.NavOptions)
+                navController.navigate("Details?name=$name&description=$description&image=$image&rating=$rating&link=$link")
             }
         )
     }

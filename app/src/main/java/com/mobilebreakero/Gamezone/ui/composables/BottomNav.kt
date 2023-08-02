@@ -32,7 +32,7 @@ import com.exyte.animatednavbar.animation.balltrajectory.Straight
 import com.exyte.animatednavbar.animation.indendshape.Height
 import com.exyte.animatednavbar.animation.indendshape.shapeCornerRadius
 import com.mobilebreakero.favorite.ui.FavoriteScreen
-import com.mobilebreakero.home.ui.screens.DetailsScreen
+import com.mobilebreakero.common.screens.DetailsScreen
 import com.mobilebreakero.home.ui.screens.HomeScreen
 import com.mobilebreakero.search.ui.SearchScreen
 
@@ -156,7 +156,7 @@ fun NavigationGraph(navController: NavHostController) {
             HomeScreen(navController)
         }
         composable("Search") {
-            SearchScreen()
+            SearchScreen(navController)
         }
         composable("Favorites") {
             FavoriteScreen()
