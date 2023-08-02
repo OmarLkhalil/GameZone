@@ -36,12 +36,13 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.4.4"
     }
 
 }
 
 dependencies {
+
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
@@ -51,16 +52,27 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(project(mapOf("path" to ":common")))
+    implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":domain")))
     testImplementation(libs.junit)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
-    implementation(project(mapOf("path" to ":common")))
-    implementation(project(mapOf("path" to ":data")))
+
     implementation(libs.lifecycle.viewmodel)
     implementation(libs.coil.compose)
     implementation(libs.compose.ui.util)
     implementation(libs.navigation.compose)
     implementation(libs.compose.material)
+    implementation(libs.retrofit)
+    implementation(libs.google.gson)
+    implementation(libs.retrofit.gson)
+    implementation(libs.paging.compose)
+    implementation(libs.coroutines)
     implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation)
+    kapt(libs.hilt.android.compiler)
 
+    implementation(libs.paging)
+    implementation(libs.hilt.navigation.compose)
 }

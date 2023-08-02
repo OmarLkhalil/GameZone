@@ -1,4 +1,4 @@
-package com.mobilebreakero.home.ui.viewmodell
+package com.mobilebreakero.common.viewmodell
 
 import android.util.Log
 import androidx.compose.runtime.State
@@ -8,14 +8,13 @@ import androidx.lifecycle.viewModelScope
 import com.mobilebreakero.domain.usecase.GetGames
 import com.mobilebreakero.domain.utils.GameState
 import com.mobilebreakero.domain.utils.Resource
-import com.mobilebreakero.mapper.GamesMapper
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(private val getGamesUseCase: GetGames) : ViewModel() {
+class MainViewModel @Inject constructor(private val getGamesUseCase: GetGames) : ViewModel() {
 
     private val _state = mutableStateOf(GameState())
 

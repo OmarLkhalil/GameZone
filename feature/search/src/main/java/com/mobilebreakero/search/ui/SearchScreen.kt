@@ -3,22 +3,23 @@ package com.mobilebreakero.search.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.mobilebreakero.search.components.SearchBar
 
 @Composable
-fun SearchScreen(){
+fun SearchScreen(navController: NavController) {
+
     Column(
-        modifier = Modifier.fillMaxSize().background(Color(0xFF303A56))
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFF303A56))
+            .padding(top = 20.dp),
     ) {
-        Hello()
+        SearchBar(navController = navController)
     }
-}
-
-@Composable
-fun Hello(){
-    Text(text = "Hello", modifier = Modifier.fillMaxSize(), fontSize = 20.sp)
 }

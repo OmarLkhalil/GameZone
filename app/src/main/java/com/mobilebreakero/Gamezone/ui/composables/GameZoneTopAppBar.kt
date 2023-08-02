@@ -65,7 +65,13 @@ fun TopBarTitle(navController: NavController) {
             fontSize = 25.sp,
             overflow = TextOverflow.Ellipsis
         )
-    } else {
+    }
+    else if(currentRoute.isNullOrBlank()) {
+        Text(text = "GameZone", textAlign = TextAlign.Center, modifier = Modifier
+            .fillMaxWidth(), maxLines = 1, color = Color.Black, fontSize = 25.sp, overflow = TextOverflow.Ellipsis)
+    }
+
+    else {
         Text(
             text = currentRoute.toString(),
             textAlign = TextAlign.Center,

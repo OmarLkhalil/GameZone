@@ -1,4 +1,4 @@
-package com.mobilebreakero.home.ui.screens
+package com.mobilebreakero.common.screens
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Column
