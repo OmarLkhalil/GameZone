@@ -26,7 +26,8 @@ class GamesMapper @Inject constructor() {
                 description = it.description ?: "",
                 image = it.image?.originalUrl ?: "",
                 rating = it.originalGameRating ?: 0,
-                website = it.siteDetailUrl ?: ""
+                website = it.siteDetailUrl ?: "",
+                isFavorite = false
             )
         }
     }

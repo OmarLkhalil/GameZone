@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidlibrary)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.hilt)
     alias(libs.plugins.kotlinKapt)
 }
 
@@ -50,6 +51,7 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(project(mapOf("path" to ":domain")))
     testImplementation(libs.junit)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
@@ -61,5 +63,10 @@ dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.compose.material)
     implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation.compose)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.room.database.runtime)
+    kapt(libs.room.database.compiler)
+    implementation(libs.room.database.ktx)
 
 }

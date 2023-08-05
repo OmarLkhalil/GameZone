@@ -1,4 +1,4 @@
-package com.mobilebreakero.Gamezone.ui.composables
+package com.mobilebreakero.Gamezone.ui.components
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.core.tween
@@ -159,7 +159,7 @@ fun NavigationGraph(navController: NavHostController) {
             SearchScreen(navController)
         }
         composable("Favorites") {
-            FavoriteScreen()
+            FavoriteScreen(navController)
         }
         composable(
             "Details?name={name}&description={description}&image={image}&rating={rating}&link={link}",

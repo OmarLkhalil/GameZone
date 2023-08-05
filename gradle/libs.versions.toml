@@ -21,6 +21,7 @@ paging  = "3.1.1"
 paging-compose  = "1.0.0-alpha19"
 coroutines = "1.7.2"
 animated-bar= "1.0.0"
+room = "2.5.2"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -54,7 +55,9 @@ paging = {group = "androidx.paging", name = "paging-runtime", version.ref = "pag
 paging-compose = {group = "androidx.paging", name = "paging-compose", version.ref = "paging-compose"}
 paging-ktx = {group = "androidx.paging", name = "paging-common-ktx", version.ref = "paging"}
 animated-navigation-bar = {group = "com.exyte", name = "animated-navigation-bar", version.ref = "animated-bar"}
-
+room-database-runtime = {group = "androidx.room", name = "room-runtime", version.ref = "room"}
+room-database-compiler = {group = "androidx.room", name = "room-compiler", version.ref = "room"}
+room-database-ktx = {group = "androidx.room", name = "room-ktx", version.ref = "room"}
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
