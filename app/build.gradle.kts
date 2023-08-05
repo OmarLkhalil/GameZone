@@ -103,6 +103,8 @@ dependencies {
     implementation(libs.retrofit.gson)
     implementation(libs.google.gson)
     implementation(libs.animated.navigation.bar)
-
+    implementation(libs.room.database.runtime)
+    kapt(libs.room.database.compiler)
+    implementation(libs.room.database.ktx)
 
 }

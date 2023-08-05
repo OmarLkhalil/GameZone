@@ -70,5 +70,7 @@ dependencies {
     implementation(libs.hilt.navigation)
     kapt(libs.hilt.android.compiler)
     implementation(libs.hilt.navigation.compose)
-
+    implementation(libs.room.database.runtime)
+    kapt(libs.room.database.compiler)
+    implementation(libs.room.database.ktx)
 }

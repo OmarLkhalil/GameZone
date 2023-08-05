@@ -1,12 +1,12 @@
-package com.mobilebreakero.search.components
+package com.mobilebreakero.favorite.ui
+
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -18,25 +18,24 @@ import com.mobilebreakero.common.viewmodell.FavoriteViewModel
 import com.mobilebreakero.domain.model.GamesItem
 
 @Composable
-fun SearchList(
+fun FavoriteList(
     games: List<GamesItem?>,
     navController: NavController,
     viewModel: FavoriteViewModel = hiltViewModel()
 ) {
 
     val context = LocalContext.current
-
     if (games.isEmpty()) {
         LoadingIndicator()
     }
-
 
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        itemsIndexed(games) { index, game ->
+
+        items(games) { game ->
 
             GamesCard(
                 image = game!!.image,
@@ -53,8 +52,8 @@ fun SearchList(
                     Toast.makeText(context, "Added to Favorite", Toast.LENGTH_SHORT).show()
                 } else {
                     game.isFavorite = false
-                    Toast.makeText(context, "Removed from Favorite", Toast.LENGTH_SHORT).show()
                     viewModel.deleteGames(game)
+                    Toast.makeText(context, "Removed from Favorite", Toast.LENGTH_SHORT).show()
                 }
             }
         }

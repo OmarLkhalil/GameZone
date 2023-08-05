@@ -1,4 +1,4 @@
-package com.mobilebreakero.Gamezone.ui.composables
+package com.mobilebreakero.Gamezone.ui.components
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*

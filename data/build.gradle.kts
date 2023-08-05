@@ -11,8 +11,8 @@ plugins {
 android {
     compileSdk = 33
     namespace = "com.mobilebreakero.data"
-
     defaultConfig {
+        minSdk = 24
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -70,5 +70,14 @@ dependencies {
     kapt(libs.hilt.android.compiler)
     implementation(libs.hilt.navigation.compose)
     implementation(libs.google.gson)
+    implementation(libs.room.database.runtime)
+    kapt(libs.room.database.compiler)
+    implementation(libs.room.database.ktx)
 
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
+    androidTestImplementation ("androidx.test:runner:1.5.2")
+    androidTestImplementation ("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
 }

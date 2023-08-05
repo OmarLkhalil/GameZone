@@ -75,4 +75,7 @@ dependencies {
 
     implementation(libs.paging)
     implementation(libs.hilt.navigation.compose)
+    implementation(libs.room.database.runtime)
+    kapt(libs.room.database.compiler)
+    implementation(libs.room.database.ktx)
 }
