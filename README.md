@@ -21,6 +21,16 @@ This project is an excellent sample of Compose implementation, and we welcome an
 2. Insert your Giant Games API key in the appropriate configuration file
 3. Build and run the app in Android Studio
 
+## Screenshots
+
+![Screenshot 1](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s1.png)
+![Screenshot 2](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s2.png)
+![Screenshot 3](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s3.png)
+![Screenshot 4](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s4.png)
+![Screenshot 5](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s5.png)
+![Screenshot 6](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s6.png)
+![Screenshot 7](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s7.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
