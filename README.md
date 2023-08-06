@@ -23,13 +23,14 @@ This project is an excellent sample of Compose implementation, and we welcome an
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s1.png)
-![Screenshot 2](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s2.png)
-![Screenshot 3](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s3.png)
-![Screenshot 4](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s4.png)
-![Screenshot 5](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s5.png)
-![Screenshot 6](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s6.png)
-![Screenshot 7](https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s7.png)
+<!-- Adjust the width and height attributes to the desired size -->
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s1.png" width="200" height="400">
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s2.png" width="200" height="400">
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s3.png" width="200" height="400">
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s4.png" width="200" height="400">
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s5.png" width="200" height="400">
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s6.png" width="200" height="400">
+<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s7.png" width="200" height="400">
 
 ## License
 
