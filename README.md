@@ -23,14 +23,26 @@ This project is an excellent sample of Compose implementation, and we welcome an
 
 ## Screenshots
 
-<!-- Adjust the width and height attributes to the desired size -->
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s1.png" width="200" height="400">
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s2.png" width="200" height="400">
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s3.png" width="200" height="400">
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s4.png" width="200" height="400">
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s5.png" width="200" height="400">
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s6.png" width="200" height="400">
-<img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s7.png" width="200" height="400">
+<div class="row">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s1.png" width="200" height="400">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s2.png" width="200" height="400">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s3.png" width="200" height="400">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s4.png" width="200" height="400">
+</div>
+<div class="row">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s5.png" width="200" height="400">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s6.png" width="200" height="400">
+    <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s7.png" width="200" height="400">
+</div>
+
+<style>
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+</style>
 
 ## License
 
