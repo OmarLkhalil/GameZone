@@ -125,7 +125,7 @@ fun MiddlePager(viewModel: MainViewModel = hiltViewModel(), navController: NavCo
 
     val games = viewModel.games.value.games!!.flow.collectAsLazyPagingItems()
     val pagerState = rememberPagerState(
-        initialPage = 6,
+        initialPage = 5,
     )
 
     if(games.itemCount == 0) {

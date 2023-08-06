@@ -61,14 +61,14 @@ fun TopBarTitle(navController: NavController) {
             modifier = Modifier
                 .fillMaxWidth(),
             maxLines = 1,
-            color = Color.Black,
+            color = Color.White,
             fontSize = 25.sp,
             overflow = TextOverflow.Ellipsis
         )
     }
     else if(currentRoute.isNullOrBlank()) {
         Text(text = "GameZone", textAlign = TextAlign.Center, modifier = Modifier
-            .fillMaxWidth(), maxLines = 1, color = Color.Black, fontSize = 25.sp, overflow = TextOverflow.Ellipsis)
+            .fillMaxWidth(), maxLines = 1, color = Color.White, fontSize = 25.sp, overflow = TextOverflow.Ellipsis)
     }
 
     else {
@@ -78,7 +78,7 @@ fun TopBarTitle(navController: NavController) {
             modifier = Modifier
                 .fillMaxWidth(),
             maxLines = 1,
-            color = Color.Black,
+            color = Color.White,
             fontSize = 25.sp,
             overflow = TextOverflow.Ellipsis
         )
