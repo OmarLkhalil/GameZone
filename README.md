@@ -35,15 +35,6 @@ This project is an excellent sample of Compose implementation, and we welcome an
     <img src="https://github.com/OmarLkhalil/GameZone/blob/master/screenshot/s7.png" width="200" height="400">
 </div>
 
-<style>
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-</style>
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
