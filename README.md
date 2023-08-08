@@ -36,12 +36,6 @@ This project is an excellent sample of Compose implementation, and we welcome an
 </div>
 
 <style>
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
 </style>
 
 ## License
